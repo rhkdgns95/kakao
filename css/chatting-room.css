@@ -1,0 +1,150 @@
+body, ul, li{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+html, body{
+    height:100%;
+}
+.chatting-room{
+    position:relative;
+    height:100%;
+    background-color:#6884b3;
+    overflow:hidden;
+}
+.chatting-room .message-box{
+    position:relative;
+    overflow-Y:scroll;
+    padding-bottom:5px;
+    height:93%;
+}
+.chatting-room .message-box .chat-group{
+    padding-top:10px;
+
+}
+.chatting-room .message-box .chat-group::before{
+    content:attr(data-date-str);
+    display:block;
+    text-align:center;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    font-size:12px;
+    padding:8px;
+    margin:0 5px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.chatting-room .message-box .chat-group .chat-message {
+    margin:0 10px;
+    display:block;
+}
+
+.chatting-room .message-box .chat-group .chat-message::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.chatting-room .message-box .chat-group .chat-message span {
+    display:block;
+    font-size:12px;
+    padding-bottom:3px;
+}
+.chatting-room .message-box .chat-group .chat-message.other{
+    margin-left:46px;
+    position:relative;
+}
+.chatting-room .message-box .chat-group .chat-message.other .message{
+    margin-bottom:5px;
+
+}
+/*자신이 전송한 메시지 시작*/
+.chatting-room .message-box .chat-group .chat-message.mine .message{
+    float:right;
+    box-shadow:1px 1px  rgba(0,0,0,0.2);
+    background-color:yellow;
+    margin-bottom:5px;
+}
+.chatting-room .message-box .chat-group .chat-message.mine section,
+.chatting-room .message-box .chat-group .chat-message.mine span{
+    display:none;
+}
+/*자신이 전송한 메시지 종료*/
+
+.chatting-room .message-box .chat-group .chat-message .message {
+    padding:8px 10px;
+    font-size:12px;
+    font-weight:bold;
+    background-color:white;
+    float:left;
+    border-radius:5px;
+    box-shadow:-1px 1px  rgba(0,0,0,0.2);
+}
+.chatting-room .message-box .chat-group .chat-message section{
+    background-color:gray;
+    padding:17px;
+    border-radius:50%;
+    position:absolute;
+    background-color:white;
+    font-size:15px;
+    top:10%;
+    left:-43px;
+}
+.chatting-room .input-box{
+    position:absolute;
+    bottom:0px;
+    left:0;
+    width:100%;
+}
+.input-box input[type="text"] {
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    padding-right:70px;
+    font-size:13px;
+    line-height:20px;
+    padding:5px 0;
+    padding-left:35px;
+
+    width:100%;
+}
+.input-box .plus-btn i,
+.input-box .emo-btn i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+.input-box .plus-btn,
+.input-box .emo-btn,
+.input-box .search-btn{
+    position:absolute;
+    top:0px;
+    height:100%;
+}
+.input-box .emo-btn i {
+    color:gray;
+}
+.input-box .emo-btn{
+    right:20%;
+}
+.input-box .plus-btn{
+    width:30px;
+    background-color:#dfdfdf;
+}
+.input-box .search-btn{
+    right:5px;
+    top:50%;
+    transform:translateY(-50%);
+    padding:3px 10px;
+    border-radius:2px;
+    height:25px;
+    background-color:#fdf01b;
+    font-size:10px;
+    line-height:25px;
+    color:gray;
+    cursor:pointer;
+}
+
+/*스크롤바 꾸미기*/

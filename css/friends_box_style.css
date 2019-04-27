@@ -1,0 +1,165 @@
+/*friend-box와 chat-box 의 공통 부분이다. 시작*/
+.con1 .main .list-box .selector .search-box{
+    position:relative;
+    padding:0px;
+    margin:0px;
+    height:auto;
+}
+.con1 .main .list-box .selector .line li > ul > li:nth-of-type(2){
+    float:left;
+    padding-left:40px;
+    font-size:10px;
+}
+.con1 .main .list-box .selector .line li > ul > li:nth-last-of-type(1){
+    float:right;
+}
+.con1 .main .list-box .selector .line li ul li:nth-of-type(1){
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    position:absolute;
+    transform:translateY(-50%);
+    top:50%;
+    left:15px;
+    background-color:rgba(0,0,0,0.2);
+    white-space:nowrap;
+}
+.con1 .main .list-box .selector .line > li{
+    padding:5px 0;
+}
+
+.con1 .main .list-box .selector .line:nth-last-of-type(1) ul{
+
+}
+.con1 .main .list-box .selector .search-box i{
+    position:absolute;
+    top:50%;
+    font-size:12px;
+    opacity:0.4;
+    transform:translateY(-50%);
+    left:10px;
+    color:black;
+}
+.con1 .main .list-box .selector input[type="text"]{
+    box-sizing:border-box;
+    width:100%;
+    padding-top:3px;
+    line-height:30px;
+    padding-left:27px;
+    font-size:9px;
+    border-left:0px;
+    border-right:0px;
+    border-top:1px;
+    border-bottom:0.6px solid #dfdfdf;
+}
+.con1 .main .list-box .selector .search-box .remove-text{
+    position:absolute;
+    right:5px;
+    top:50%;
+    padding:7px;
+    background-color:#dfdfdf;
+    border-radius:50%;
+    transform:translateY(-50%);
+    display:none;
+}
+.con1 .main .list-box .selector .search-box .remove-text i{
+    left:auto;
+    right:2.7px;
+    font-size:10px;
+    top:1px;
+    color:white;
+    opacity:1;
+    font-weight:100;
+    position:absolute;
+    transform:translateY(10%);
+}
+
+/*active 가있는 클래스에는 이미 색칠이 되어있으므로.*/
+/*chat-box 에서도 똑같은 클래스로 맞추어야함! */
+.con1 .main .list-box .selector .line > li{
+/*    border:3px solid red;*/
+}
+.con1 .main .list-box .selector .line > li:not(.active):hover {
+    background-color:aliceblue;
+}
+
+.con1 .main .list-box .selector .line > li.active{
+    background-color:#dfdfdf;
+}
+
+
+/*friend-box, chat-box 의 공통 부분이다. 끝*/
+.con1 .main .list-box .selector .line {
+    font-size:11px;
+    font-weight:bold;
+    padding-bottom:0px;
+}
+
+.con1 .main .list-box .selector .line p{
+    position:relative;
+    margin:0px;
+    padding:10px 0px;
+    padding-bottom:5px;
+    font-size:10px;
+    color:gray;
+    font-weight:400;
+}
+.con1 .main .list-box .selector .line p::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    width:95%;
+    height:1px;
+    right:0;
+    background-color:#dfdfdf;
+}
+.con1 .main .list-box .selector .line:nth-of-type(2) p::after{
+    top:101%;
+}
+.con1 .main .list-box .selector .line:not(:nth-last-of-type(1)){
+    padding-bottom:10px;
+}
+.con1 .main .list-box .selector .line:not(:nth-last-of-type(1)) ul{
+    padding:10px 0;
+}
+.con1 .main .list-box .selector .line:nth-last-of-type(1) > li {
+    padding:10px 0;
+}
+
+.con1 .main .list-box .selector .line li ul li:not(:nth-of-type(2)){
+    margin-right:10px;
+}
+/*여기 수정하면된다!.*/
+.con1 .main .list-box .selector .line > li {
+    position:relative;
+}
+.con1 .main .list-box .selector .line:nth-last-of-type(1) > li{
+    padding:15px 0;
+}
+.con1 .main .list-box .selector .line li ul li:nth-last-of-type(1){
+    float:right;
+    width:50%;
+    font-size:8px;
+    position:absolute;
+    height:auto;
+    top:50%;
+    transform:translateY(-50%);
+    right:10px;
+}
+/*프로필은 최대 30글자까지만 허용되게끔해야함*/
+/* 프로필내용 부분인데 어떻ㄱ ㅔ수정할지 고민됨..*/
+
+
+.con1 .main .list-box .selector .line li ul li:nth-last-of-type(1) span{
+    float:right;
+    font-weight:100;
+}
+
+/* 줄간격 맞춤 시작 */
+.con1 .main .list-box .selector .line p{
+    padding-left:13px !important;
+}
+.con1 .main .list-box .selector .line ul{
+    padding-left:13px !important;
+}
+/* 줄간격 맞춤 종료 */

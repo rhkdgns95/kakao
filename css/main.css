@@ -1,0 +1,105 @@
+body, ul, li{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+a{
+    color:inherit;
+    text-decoration:inherit;
+}
+.con {
+    min-width:600px;
+}
+.login{
+    width:290px;
+    height:470px;
+    background-color:#ffef48;
+    margin:0 auto;
+}
+.con .top-logo{
+    position:relative;
+    height:170px;
+    color:#3a210fed;
+}
+.con .top-logo > i{
+    position:absolute;
+    top:60%;
+    left:50%;
+    font-size:4em;
+    transform:translate(-50%, -50%);
+}
+.con .login-box{
+    width:200px;
+    margin:0 auto;
+}
+.con .login-box table{
+    margin:0 auto;
+}
+.con .login-box td{
+    position:relative;
+}
+.con .login-box input{
+    width:190px;
+    height:30px;
+    font-size:12px;
+    line-height:10px;
+}
+
+.con .login-box input[type="checkbox"]{
+    width:auto;
+}
+.con .login-box tr td span{
+    font-size:9px;
+    position:absolute;
+    color:gray;
+    top:50%;
+    transform:translateY(-50%);
+}
+.con .login {
+    position:relative;
+}
+.con .bottom-box {
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    white-space:nowrap;
+}
+.con .login-box input[type="text"],
+.con .login-box input[type="password"]{
+    padding-left:10px;
+    box-sizing:border-box;
+    border:0.2px solid gray;
+    font-size:10px;
+}
+.con .login-box tr:nth-of-type(2) td{
+    padding-bottom:10px;
+}
+.con .login-box input[type="submit"]{
+    background-color:whitesmoke;
+    border:0.2px solid gray;
+    color:lightgray;
+}
+.con .bottom-box span{
+    font-size:9px;
+    color:darkslategray;
+    padding-right:10px;
+}
+.con .bottom-box span:nth-of-type(1) a{
+    position:relative;
+    height:100%;
+}
+.con .bottom-box span:nth-of-type(1) a::after{
+    content:"";
+    position:absolute;
+    height:70%;
+    top:25%;
+    right:-8px;
+    width:0.5px;
+    background-color:gray;
+}
+.con .err_msg{
+    font-size:9.5px;
+    color:red;
+    user-select:none;
+}

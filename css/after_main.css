@@ -1,0 +1,217 @@
+body, ul, li{
+padding:0px;
+margin:0px;
+list-style:none;
+}
+a{
+    color:inherit;
+    text-decoration:inherit;
+}
+.con1 {
+    min-width:600px;
+}
+.con1 .main{
+    position:relative;
+    user-select:none;
+    width:290px;
+/*    width:100%;*/
+    height:470px;
+    margin:0 auto;
+    border:.5px solid black;
+}
+.con1 .main .top-box{
+    position:relative;
+    background-color:#2f211c;
+    height:30px;
+}
+.con1 .main .top-box::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.con1 .main .top-box .logo{
+    padding:5px;
+    float:left;
+}
+
+.con1 .main .top-box .btn-box li{
+    padding:5px;
+    float:right;
+}
+.con1 .main .list-box::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.con1 .main .list-box {
+    background-color:#2f211c;
+    position:relative;
+}
+.con1 .main .list-box .list {
+    float:left;
+}
+.con1 .main .list-box li ul .selector{
+    position:absolute;
+    width:100%;
+    top:100%;
+    left:0;
+}
+.con1 .main .list-box .setting-box{
+    position:absolute;
+    right:0;
+    width:60px;
+    height:100%;
+}
+.con1 .main .list-box .setting-box::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.con1 .main .list-box .setting-box div{
+    top:40%;
+    right:10px;
+    transform:translateY(-50%);
+    position:absolute;
+    border-radius:50%;
+    border:0.5px solid black;
+    color:gray;
+
+}
+.con1 .main .list-box .setting-box div:nth-last-of-type(1){
+    right:39px;
+}
+.con1 .main .list-box .setting-box div i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:12px;
+}
+.con1 .main .list-box .setting-box div {
+    margin:0px;
+}
+.con1 .main .list-box .setting-box div > a{
+    display:block;
+    width:23px;
+    height:23px;
+}
+.con1 .main .list-box .setting-box .setting-menu ul{
+    position:absolute;
+    border:0.5px solid;
+    background-color:white;
+    width:100px;
+/*    width:auto;*/
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    display:none;
+}
+.con1 .main .list-box .setting-box .setting-menu.active ul {
+    display:block;
+}
+.con1 .main .list-box .setting-box div ul li {
+    position:relative;
+    overflow:hidden;
+}
+.con1 .main .list-box .setting-box div ul li a {
+    display:block;
+    position:relative;
+    white-space:nowrap;
+    font-size:10px;
+    padding:10px 0;
+    padding-left:15px;
+    width:100%;
+}
+.con1 .main .list-box .setting-box div ul li:hover a {
+    background-color:rgba(0,0,0,0.1);
+}
+.con1 .main .list-box .setting-box div ul li:nth-of-type(1) a::after,
+.con1 .main .list-box .setting-box div ul li:nth-of-type(2) a::after,
+.con1 .main .list-box .setting-box div ul li:nth-of-type(4) a::after,
+.con1 .main .list-box .setting-box div ul li:nth-of-type(6) a::after{
+    content:'';
+    position:absolute;
+    width:100%;
+
+    height:0.5px;
+    top:100%;
+    left:0;
+    background-color:rgba(0,0,0,0.2);
+}
+/*목록들 active 가 아닌것 숨기기 시작*/
+
+.con1 .main .list-box .list:not(.active) .contents .selector
+{
+    display:none;
+}
+/*목록들 active 가 아닌것 숨기기 끝*/
+.con1 .main .list-box .selector .line{
+    padding-bottom:10px;
+}
+.con1 .main .list-box .selector .line li > ul::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.con1 .main .list-box .selector .scroll-contents{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:100%;
+/*    height은 js에서 따로 넣었음 */
+    overflow-y:scroll;
+}
+
+.con1 .main .top-box .logo{
+    padding-left:15px;
+    font-size:12px;
+    color:white;
+    font-weight:100;
+}
+.con1 .main .top-box .logo span{
+    font-weight:bold;
+}
+.con1 .main .top-box .btn-box li a{
+    font-size:12px;
+    color:#dfdfdf;
+    opacity:0.4;
+    font-weight:bold;
+}
+.con1 .main .top-box .btn-box li:nth-last-of-type(1){
+    margin-top:-3px;
+}
+.con1 .main .list-box {
+    padding-left:5px;
+}
+.con1 .main .list-box .list{
+    padding:0 14px;
+    padding-bottom:14px;
+    padding-top:5px;
+}
+.con1 .main .list-box .list i{
+    color:white;
+    opacity:1;
+    font-size:20px;
+}
+.con1 .main .list-box .list:not(.active) .list-logo i{
+    opacity:0.4;
+}
+.con1 .side-bg {
+    background-color:red;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.2);
+}
+
+/* iframe 크기 조정 */
+
+.con1 .iframe-friends{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+}
